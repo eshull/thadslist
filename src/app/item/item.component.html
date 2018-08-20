@@ -1,3 +1,7 @@
-<p>
-  item works!
-</p>
+<div *ngFor="let item of items" class="panel panel-primary">
+  <p>Title: {{ item.name }} </p>
+  <p>Description: {{ item.description }} </p>
+  <p>Price: {{ item.price }} </p>
+  <p>Location: {{ item.location }}
+  <p>Category: {{ item.category.title }}
+</div>

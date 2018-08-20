@@ -1,3 +1,27 @@
 <p>
   category works!
 </p>
+
+<form class="form" action="index.html" method="post">
+  <h2>New posting</h2>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input #title class="form-control" type="text" name="title">
+    <label for="description">Description</label>
+    <input #description class="form-control" type="text" name="description">
+    <label for="price">Price</label>
+    <input #price class="form-control" type="number" name="price">
+    <label for="location">Location</label>
+    <input #location class="form-control" type="text" name="location">
+    <label for="categories">Select Category</label>
+    <select #category class="form-control">
+      <option value='0'>Toys</option>
+      <option value='1'>Sean Connery Related Items</option>
+      <option value='2'>Fidget Spinners</option>
+      <option value='3'>Books by Kevin Ahn</option>
+      <option value='4'>More Interesting Books by Thad</option>
+      <option value='5'>Questionable Novels by Elly Maimon</option>
+    </select>
+  </div>
+  <button (click)="onSubmit(title.value, description.value, price.value, location.value, category.value)" type="button">Add Item</button>
+</form>
