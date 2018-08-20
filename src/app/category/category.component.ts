@@ -9,13 +9,14 @@ import { Item } from '../item.model';
 })
 export class CategoryComponent implements OnInit {
   categories: Category[] = Category.categories;
+  randomNum: number = Math.floor(Math.random() * 999);
   constructor() { }
 
   ngOnInit() {
   }
 
   onSubmit(title: string, description: string, price: number, location: string, category: string) {
-    new Item(title, this.categories[parseInt(category)], description, price, location);
+    new Item(title, this.categories[parseInt(category)], description, price, location, this.randomNum);
   }
 
 }

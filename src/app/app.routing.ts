@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ItemComponent } from './item/item.component';
 import { CategoryComponent } from './category/category.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'category',
     component: CategoryComponent
+  },
+  {
+    path: 'listing/:id',
+    component: ItemDetailComponent
   }
 ];
 

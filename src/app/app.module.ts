@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { CategoryComponent } from './category/category.component';
 import { ItemComponent } from './item/item.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
     ItemComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
