@@ -1,0 +1,23 @@
+{ "items": [{
+    "title": "Nose Spinner",
+    "category": "Fidget Spinners",
+    "description": "Fidget Spinner for those without thumbs",
+    "price": 22,
+    "location": "Portland",
+    "id": "1"
+    }, {
+      "title": "Sean Connery's Hair Dryer",
+      "category": "Sean Connery Related Items",
+      "description": "Owned by Sean Connery",
+      "price": 44,
+      "location": "Portland",
+      "id": "2"
+      }, {
+      "title": "Nose Spinner",
+      "category": "Fidget Spinners",
+      "description": "Fidget Spinner for those without thumbs",
+      "price": 32,
+      "location": "Portland",
+      "id": "3"
+  }]
+}
