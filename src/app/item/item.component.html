@@ -1,3 +1,6 @@
-<div *ngFor="let item of items" class="panel panel-primary">
-  <h3><a [routerLink]="['/listing', item.id]">{{ item.title }}</a></h3>
+<div *ngFor="let item of items| async" (click)="goToDetailPage(item)" class="panel panel-primary">
+  <div class="panel-body">
+    <!-- <h3><a [routerLink]="['/listing', item.id]">{{ item.title }}</a></h3> -->
+    <h3><em>{{item.title}}</em> by {{ item.description }}</h3>
+  </div>
 </div>

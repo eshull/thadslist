@@ -1,0 +1,15 @@
+<h3>Add New Item to Inventory</h3>
+<div>
+  <div>
+    <label>Item Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Item Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+  <button (click)="submitForm(newTitle.value, newDescription.value)">Add</button>
+</div>

@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ItemComponent } from './item/item.component';
 import { CategoryComponent } from './category/category.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'listing/:id',
     component: ItemDetailComponent
+  },
+  {
+   path: 'admin',
+   component: AdminComponent
   }
 ];
 
